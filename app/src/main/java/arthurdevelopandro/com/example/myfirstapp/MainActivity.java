@@ -1,5 +1,4 @@
-package com.example.arthurdevelopandro;
-
+package arthurdevelopandro.com.example.myfirstapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import arthurdevelopandro.com.example.myfirstapp.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

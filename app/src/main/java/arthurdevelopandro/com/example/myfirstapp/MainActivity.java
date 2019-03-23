@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //tv_console.append("Click ! \n");
 
         if (view == bt_ajouter) {
-            //tv_console.setText("bt_ajouter !");
+            tv_console.setText("bt_ajouter !");
         }
         if (view == bt_ajouter_plusieurs) {
-            //tv_console.setText("bt_ajouter_plusieurs !!");
+            tv_console.setText("bt_ajouter_plusieurs !!");
         }
         if (view == bt_supprimer_dernier) {
-            //tv_console.setText("bt_suppimer");
+            tv_console.setText("bt_suppimer");
         }
     }
 

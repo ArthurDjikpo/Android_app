@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -97,6 +98,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
    */
     public void ajouter(String nom, String prenom, int nb) {
+
+        if (nom.length() == 0) {
+            Toast.makeText(this, "Le nom est vide ", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (prenom.length() == 0) {
+            Toast.makeText(this, "Le prenom est vide ", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         int i = 0;
 

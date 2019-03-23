@@ -58,7 +58,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //tv_console.append("Click ! \n");
 
         if (view == bt_ajouter) {
-            tv_console.setText("bt_ajouter !");
+            //tv_console.setText("bt_ajouter !");
+            String nom = et_nom.getText().toString();
+            String prenom = et_prenom.getText().toString();
+
+            String res = contact(nom, prenom);
+
+            tv_console.setText(res);
+
         }
         if (view == bt_ajouter_plusieurs) {
             tv_console.setText("bt_ajouter_plusieurs !!");
@@ -68,8 +75,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //public String contact(String nom, String prenom) {
+    public String contact(String nom, String prenom) {
+        String res = "Nom : " + nom + ", Prenom : " + prenom;
 
-    //  return resultat;
-    //}
+        if (nom.length() == 0) {
+            return "Le nom est vide";
+        }
+
+
+        return res;
+    }
 }
